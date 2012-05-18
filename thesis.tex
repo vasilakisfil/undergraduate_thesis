@@ -1,17 +1,60 @@
-\documentclass{report}
+%openany: no empty pages between chapters/parts
+%oneside: for ebook reading, change to towside for printing
+\documentclass[openany, oneside, a4paper]{memoir}
+
+
+%font specific includes
+%\setromanfont{FreeSerif}
+%\setsansfont{FreeSans}
+%\setmonofont{FreeMono}
+%greek support with word "brakes"
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xgreek}
+\setmainfont[Mapping=TeX-text]{Times New Roman}
 
 
 
 
+%absract specific declarations (abstract is usde in the frontmatter
+\usepackage{abstract}
+\renewcommand{\abstractname}{}  % clear the title
+%\renewcommand{\absnamepos}{empty} % originally center
+
+%empty chapter names
+\renewcommand{\chaptername}{}
+
+%specifying table of contents
+% \renewcommand{\contentsname}{Περιεχόμενα}
+% \renewcommand*{\cftchapterleader}{\hfill}
+%specifying max depth table of containts should contain
+\maxtocdepth{subsection} %dotted style in subsections too
+
+%used in includegraphics command
+\usepackage{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{2.5mm}}
 
 
 
-
-
-
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT BEGINS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-Hello world!
+\frontmatter
+%titlepage + prologue + abstract
+\include{frontmatter}
+\mainmatter
+%1st chapter
+\include{intro-wsns}
+%2nd chapter
+\include{wrsns}
+%3rd chapter
+\include{strategies-and-algorithms}
+%4th chapter
+\include{results}
+%5th chapter
+\include{conclusion}
+
+%bibliography to do later
+%\bibliographystyle{plain}
+% \bibliography{thesis}
+
 \end{document}

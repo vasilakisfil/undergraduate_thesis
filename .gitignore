@@ -3,3 +3,9 @@
 *.log
 *~
 *.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.backup
+*.toc
