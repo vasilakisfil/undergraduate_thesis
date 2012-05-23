@@ -1,5 +1,5 @@
 %openany: no empty pages between chapters/parts
-%oneside: for ebook reading, change to towside for printing
+%oneside: for ebook reading, change to towside for printing !!!!!!!!!!!!!! <-----------
 \documentclass[openany, oneside, a4paper]{memoir}
 
 
@@ -28,7 +28,10 @@
 % \renewcommand{\contentsname}{Περιεχόμενα}
 % \renewcommand*{\cftchapterleader}{\hfill}
 %specifying max depth table of containts should contain
-\maxtocdepth{subsection} %dotted style in subsections too
+% \maxtocdepth{subsubsection} %dotted style in subsections too
+\setsecnumdepth{subsection}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 %used in includegraphics command
 \usepackage{graphicx}
@@ -45,12 +48,16 @@
 %1st chapter
 \include{intro-wsns}
 %2nd chapter
-\include{wrsns}
+\include{energy_reduction}
 %3rd chapter
-\include{strategies-and-algorithms}
+\include{wrsns}
 %4th chapter
+\include{problem_definition}
+%5rd chapter
+\include{strategies-and-algorithms}
+%6th chapter
 \include{results}
-%5th chapter
+%7th chapter
 \include{conclusion}
 
 %bibliography to do later
