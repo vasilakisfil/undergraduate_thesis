@@ -13,8 +13,9 @@
 \usepackage{xgreek}
 \setmainfont[Mapping=TeX-text]{Times New Roman}
 
-
-
+\usepackage{url}
+\renewcommand{\figurename}{Εικόνα}
+\renewcommand\bibname{Αναφορές}
 
 %absract specific declarations (abstract is usde in the frontmatter
 \usepackage{abstract}
@@ -48,6 +49,7 @@
 %1st chapter
 \include{intro-wsns}
 %2nd chapter
+% \begin{comment}
 \include{energy_reduction}
 %3rd chapter
 \include{wrsns}
@@ -59,9 +61,9 @@
 \include{results}
 %7th chapter
 \include{conclusion}
-
+% \end{comment}
 %bibliography to do later
-%\bibliographystyle{plain}
-% \bibliography{thesis}
+\bibliographystyle{unsrt}
+\bibliography{thesis}
 
 \end{document}
