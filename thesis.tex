@@ -31,7 +31,7 @@
 % \renewcommand*{\cftchapterleader}{\hfill}
 %specifying max depth table of containts should contain
 % \maxtocdepth{subsubsection} %dotted style in subsections too
-\setsecnumdepth{subsection}
+\setsecnumdepth{subsubsection}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
@@ -45,10 +45,19 @@
 \usepackage{subcaption}
 
 
+% for proofs
+\usepackage{amsthm}
 
 \usepackage{listings}
 \usepackage{amsmath}
-
+\newtheorem{definition}{Ορισμός}
+\newtheorem{theorem}{Θεώρημα}
+% for integer, imagine etc sets
+\usepackage{amsfonts}
+% for algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\floatname{algorithm}{Αλγόριθμος}
 
 \usepackage{url}
 \usepackage{perpage}
@@ -68,12 +77,11 @@
 %3rd chapter
 \include{wrsns}
 %4th chapter
-\include{problem_definition}
-%5rd chapter
-\include{strategies-and-algorithms}
-%6th chapter
+\include{problem_definition_solution}
+
+%5th chapter
 \include{results}
-%7th chapter
+%6th chapter
 \include{conclusion}
 % \end{comment}
 %bibliography to do later
