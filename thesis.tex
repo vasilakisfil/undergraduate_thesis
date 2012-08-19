@@ -1,5 +1,5 @@
 %openany: no empty pages between chapters/parts
-%oneside: for ebook reading, change to towside for printing !!!!!!!!!!!!!! <-----------
+%oneside: for ebook reading, change to twoside for printing !!!!!!!!!!!!!! <-----------
 \documentclass[openany, oneside, a4paper]{memoir}
 
 
@@ -44,6 +44,9 @@
 \let\subfloat\undefined
 \usepackage{subcaption}
 
+% side images
+\usepackage{wrapfig}
+
 
 % for proofs
 \usepackage{amsthm}
@@ -67,24 +70,21 @@
 \begin{document}
 \frontmatter
 %titlepage + prologue + abstract
-\include{frontmatter}
+\include{0-frontmatter}
 \mainmatter
 %1st chapter
-\include{intro-wsns}
+\include{1-intro_wsns}
 %2nd chapter
-% \begin{comment}
-\include{energy_reduction}
+\include{2-energy_reduction}
 %3rd chapter
-\include{wrsns}
+\include{3-wrsns}
 %4th chapter
-\include{problem_definition_solution}
-
+\include{4-problem_definition_solution}
 %5th chapter
-\include{results}
+\include{5-results}
 %6th chapter
-\include{conclusion}
-% \end{comment}
-%bibliography to do later
+\include{6-conclusion}
+%bibliography
 \bibliographystyle{unsrt}
 \bibliography{thesis}
 
@@ -102,5 +102,6 @@ na valw to kostos mias metadoshs, to kostos na metadwsw dedomena dld, einai shma
 καθυστερηση ---> χρονοκαθυστερηση (latency)
 επιβλέπω παρακολουθω, ανιχνεύω ???
 εξισορρόπηση όχι εξισσορρόπηση
+search δωθ
 
 \end{comment}
