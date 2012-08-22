@@ -349,6 +349,44 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 \end{figure}
 
 
+\section{Παραμετροποιώντας την Τεχνολογία Φόρτισης}\label{sc:result5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+  \centering
+  \subfloat[Greedy με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_greedy_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο Greedy. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \subfloat[Leach με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_leach_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο Leach. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_ei_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο $\text{E}_{i}$. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
+\end{figure}
 
 
 
@@ -369,8 +407,7 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 
 
 
-
-\section{Αυξάνοντας τον αριθμό των κόμβων}\label{sc:result5}
+\section{Αυξάνοντας τον αριθμό των κόμβων}\label{sc:result6}
 Σε αυτό το πείραμα, ο αριθμός των κόμβων αυξάνεται δραματικά. Συγκεκριμένα από 1000 κόμβους που ήταν στα προηγούμενα πειράματα, ο αριθμός των κόμβων γίνεται 4000. Ο
 κινητός φορτιστής πλέον τώρα έχει να εξυπηρετήσει 4 φορές παραπάνω κόμβους. Το πείραμα αυτό προσπαθεί να διαπιστώσει αν η αρχιτεκτονική του δικτύου που σχεδιάστηκε
 στις προηγούμενες ενότητες έχει κάποια όρια στην εξυπηρέτηση των κόμβων. Τα αποτελέσματα δείχνουν οτι γενικώς ο φορτιστής μπορεί να βελτιώσει τις μετρικές του
@@ -380,7 +417,7 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 σε αυτή την σειρά των πειραμάτων σε σχέση με τις προηγούμενες λόγω του αυξημένου αριθμού των κόμβων και δημιουγεί νέα κατεύθυνση έρευνας που θα διαχειρίζεται
 πολλαπλούς κινητούς κόμβους για καλύτερη διαχείρηση της συνολικής ενέργειας του δικτύου.
 
-\subsection{Με και Χωρίς Φόρτιση}\label{subc:result5_1}
+\subsection{Με και Χωρίς Φόρτιση}\label{subc:result6_1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
   \centering
@@ -457,7 +494,7 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 
 
 
-\subsection{Ολική και Μερική Φόρτιση}\label{subc:result5_2}
+\subsection{Ολική και Μερική Φόρτιση}\label{subc:result6_2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
   \centering
@@ -499,7 +536,7 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 \end{figure}
 
 
-\subsection{Ποσοστό Ενέργειας στον Φορτιστή}\label{subc:result5_3}
+\subsection{Ποσοστό Ενέργειας στον Φορτιστή}\label{subc:result6_3}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
   \centering
@@ -525,7 +562,7 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
   \label{fig:5_3exp_1_3}
 \end{figure}
 
-\subsection{Σύγκριση Διαδρομών Φορτιστή}\label{subc:result5_4}
+\subsection{Σύγκριση Διαδρομών Φορτιστή}\label{subc:result6_4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[H]
   \centering
@@ -552,29 +589,46 @@ adaptive charger & 42412 & 37856 & 38641\\\cline{2-4}
 \end{figure}
 
 
-\section{Παραμετροποιώντας την Τεχνολογία Φόρτισης}\label{sc:result6}
+
+\subsection{Παραμετροποιώντας την Τεχνολογία Φόρτισης}\label{subc:result6_5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% 1. LIFETIME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.85\textwidth]{experiments/4000nodes/3.smallVSbigpercentage/alive_nodes_greedy_rc_per_our.eps}
-  \caption{Ζωντανοί κόμβοι κατά την πάροδο του χρόνου στο Greedy πρωτόκολλο με ποικίλα ποσοστά ενέργειας στον κινητό φορτιστή. Στη γραφική αυτή φαίνεται ξεκάθαρα η
-ανικανότητα του κινητού φορτιστή να διαχειριστεί αποδοτικά μεγάλο μέρος της συνολικής ενέργειας του δικτύου λόγω μεγάλου αριθμού κόμβων.}
-  \label{fig:5_3exp_1_1}
-\end{figure}
 
 \begin{figure}[H]
   \centering
-   \includegraphics[width=0.85\textwidth]{experiments/4000nodes/3.smallVSbigpercentage/alive_nodes_leach_rc_per_our.eps}
-  \caption{Ζωντανοί κόμβοι κατά την πάροδο του χρόνου στο Leach πρωτόκολλο με ποικίλα ποσοστά ενέργειας στον κινητό φορτιστή. Στη γραφική αυτή φαίνεται ξεκάθαρα η
-ανικανότητα του κινητού φορτιστή να διαχειριστεί αποδοτικά μεγάλο μέρος της συνολικής ενέργειας του δικτύου λόγω μεγάλου αριθμού κόμβων.}
-  \label{fig:5_3exp_1_2}
+  \subfloat[Greedy με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_greedy_rc_per_our.eps}}
+  \subfloat[Greedy με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_greedy_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο Greedy. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
 \end{figure}
+
 
 \begin{figure}[H]
   \centering
-   \includegraphics[width=0.85\textwidth]{experiments/4000nodes/3.smallVSbigpercentage/alive_nodes_ei_rc_per_our.eps}
-  \caption{Ζωντανοί κόμβοι κατά την πάροδο του χρόνου στο $\text{E}_{i}$ πρωτόκολλο με ποικίλα ποσοστά ενέργειας στον κινητό φορτιστή. Στη γραφική αυτή φαίνεται
-ξεκάθαρα η ανικανότητα του κινητού φορτιστή να διαχειριστεί αποδοτικά μεγάλο μέρος της συνολικής ενέργειας του δικτύου λόγω μεγάλου αριθμού κόμβων.}
-  \label{fig:5_3exp_1_3}
+  \subfloat[Leach με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_leach_rc_per_our.eps}}
+  \subfloat[Leach με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_leach_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο Leach. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
 \end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=20\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.2/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=40\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.4/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=60\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.6/alive_nodes_ei_rc_per_our.eps}}
+  \subfloat[$\text{E}_{i}$ με $E^{init}_{MC}=80\%$]{\includegraphics[width=0.48\textwidth]{experiments/classic/5.smallVSbigtech/0.8/alive_nodes_ei_rc_per_our.eps}}
+  \caption{Κάλυψη του δικτύου κατα την πάροδο του χρόνου για το πρωτόκολλο $\text{E}_{i}$. Συγκρίνοντας τις 2 γραφικές παραστάσεις φαίνεται οτι στο δίκτυο με φορτιστή
+υπάρχει καλύτερη κάλυψη των σημείων του δικτύου.}
+  \label{fig:1exp_3_1}
+\end{figure}
+
+
+
+

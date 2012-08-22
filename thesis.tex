@@ -1,5 +1,5 @@
 %openany: no empty pages between chapters/parts
-%oneside: for ebook reading, change to twoside for printing !!!!!!!!!!!!!! <-----------
+%oneside: for ebook reading, change to twoside and comment out hyperref for printing !!!!!!!!!!!!!! <<<<<<<<<----------------------------------------<-<<
 \documentclass[openany, oneside, a4paper]{memoir}
 
 
@@ -65,6 +65,14 @@
 \usepackage{url}
 \usepackage{perpage}
 \MakePerPage{footnote}
+
+\usepackage[pagebackref]{hyperref}
+%  \begin{comment}
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
+%  \end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT BEGINS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
