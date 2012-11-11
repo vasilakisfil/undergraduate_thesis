@@ -66,14 +66,20 @@
 \usepackage{perpage}
 \MakePerPage{footnote}
 
+% \begin{comment} % for twoside uncomment that !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 \usepackage[pagebackref]{hyperref}
-%  \begin{comment}
 \hypersetup{
     colorlinks=false,
     pdfborder={0 0 0},
 }
-%  \end{comment}
+% \end{comment}
 
+\begin{comment} % for twoside uncomment that !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+\end{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT BEGINS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \frontmatter
@@ -81,18 +87,25 @@
 \include{0-frontmatter}
 \mainmatter
 %1st chapter
+\cleardoublepage
 \include{1-intro_wsns}
 %2nd chapter
+\cleardoublepage
 \include{2-energy_reduction}
 %3rd chapter
+\cleardoublepage
 \include{3-wrsns}
 %4th chapter
+\cleardoublepage
 \include{4-problem_definition_solution}
 %5th chapter
+\cleardoublepage
 \include{5-results}
 %6th chapter
+\cleardoublepage
 \include{6-conclusion}
 %bibliography
+\cleardoublepage
 \bibliographystyle{unsrt}
 \bibliography{thesis}
 
